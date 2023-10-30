@@ -1,15 +1,14 @@
 package lotto.domain;
 
 import java.util.List;
-import lotto.utils.validation.NumberValidation;
+import lotto.utils.NumberUtils;
 
 public class Lotto {
     private final List<Integer> numbers;
 
     public Lotto(List<Integer> numbers) {
-        NumberValidation.validateLottoNumberSize(numbers);
-        this.numbers = numbers;
+        this.numbers = NumberUtils.sorted(numbers);
     }
 
-    // TODO: 추가 기능 구현
+
 }

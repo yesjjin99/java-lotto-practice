@@ -17,4 +17,8 @@ public class Amount {
         InputValidation.validateAmountDivisible(purchaseAmount);
         return purchaseAmount / Constant.LOTTO_AMOUNT;
     }
+
+    public int getLottoCount() {
+        return lottoCount;
+    }
 }

@@ -7,7 +7,7 @@ public class StringUtils {
         try {
             return Integer.parseInt(s);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException(ErrorMessage.WRONG_INPUT_NUMBER);
+            throw new IllegalArgumentException(ErrorMessage.INVALID_INPUT_NUMBER);
         }
     }
 }
