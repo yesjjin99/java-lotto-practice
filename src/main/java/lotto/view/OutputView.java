@@ -10,6 +10,7 @@ public class OutputView {
     public static void printLottos(List<Lotto> numbers, int count) {
         printLottoCount(count);
         numbers.forEach(n -> printLottoNumber(n.getNumbers()));
+        System.out.println();
     }
 
     private static void printLottoCount(int count) {

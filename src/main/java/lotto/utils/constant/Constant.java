@@ -7,4 +7,5 @@ public class Constant {
     public static final int LOTTO_AMOUNT = 1000;
 
     public static final String NUMBER_DELIMITER = ", ";
+    public static final String SPLIT_DELIMITER = ",";
 }

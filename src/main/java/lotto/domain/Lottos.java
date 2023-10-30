@@ -6,7 +6,7 @@ import lotto.domain.generator.LottoGenerator;
 
 public class Lottos {
     private List<Lotto> lottoList;
-    private Amount amount;
+    private final Amount amount;
 
     public Lottos(String amount) {
         this.amount = new Amount(amount);
