@@ -10,5 +10,7 @@ public class Lotto {
         this.numbers = NumberUtils.sorted(numbers);
     }
 
-
+    public List<Integer> getNumbers() {
+        return numbers;
+    }
 }

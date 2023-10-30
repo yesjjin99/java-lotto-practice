@@ -21,4 +21,8 @@ public class Amount {
     public int getLottoCount() {
         return lottoCount;
     }
+
+    public int getPurchaseAmount() {
+        return purchaseAmount;
+    }
 }

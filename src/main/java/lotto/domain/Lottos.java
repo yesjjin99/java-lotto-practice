@@ -10,10 +10,23 @@ public class Lottos {
 
     public Lottos(String amount) {
         this.amount = new Amount(amount);
+        createLottoList();
     }
 
     private void createLottoList() {
         IntStream.range(0, amount.getLottoCount())
             .forEach(i -> lottoList.add(LottoGenerator.createLotto()));
+    }
+
+    public List<Lotto> getLottoList() {
+        return lottoList;
+    }
+
+    public int getPurchaseAmount() {
+        return amount.getPurchaseAmount();
+    }
+
+    public int getLottoCount() {
+        return amount.getLottoCount();
     }
 }

@@ -9,4 +9,10 @@ public class NumberUtils {
             .sorted()
             .collect(Collectors.toList());
     }
+
+    public static List<String> convertIntToStringArray(List<Integer> numbers) {
+        return numbers.stream()
+            .map(String::valueOf)
+            .collect(Collectors.toList());
+    }
 }
